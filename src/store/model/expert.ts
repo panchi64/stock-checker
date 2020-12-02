@@ -1,6 +1,7 @@
 import {Store} from './store';
 
 export const Expert: Store = {
+	backoffStatusCodes: [403, 429, 503],
 	labels: {
 		inStock: [
 			{
@@ -10,7 +11,7 @@ export const Expert: Store = {
 		],
 		maxPrice: {
 			container: '.widget-Container-subContent .widget-ArticlePrice-price',
-			euroFormat: true
+			euroFormat: false
 		},
 		outOfStock: [
 			{
